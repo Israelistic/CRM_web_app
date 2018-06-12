@@ -12,7 +12,7 @@ and then the data type the field will store. :string should be straightforward, 
  (You might want to write an extensive file on each contact!)
 =end
 
-require 'pry'
+# require 'pry'
 class Contact < ActiveRecord::Base
   field :first_name, as: :string
   field :last_name,  as: :string
