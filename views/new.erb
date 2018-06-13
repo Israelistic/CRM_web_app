@@ -1,11 +1,15 @@
-<h1>THIS PAGE ITS FOR ADDING NEW USERS</h1>
+<h1> ADD NEW CONTACT</h1>
 
-<h2>Create new Contact</h2>
-
-<form action='/contacts' method='post'>
-  <input type='text' name='first_name'>
-  <input type='text' name='last_name'>
-  <input type='text' name='email'>
-  <input type='text' name='note'>
-  <input type='submit' value='New Contact'>
+  <form action='/contacts' method='post'>
+  <label for="first_name"> First name :</label>
+  <input id="first_name" type="text" name="first_name" value="" placeholder="first name">
+  <label for="last_name"> First name: </label>
+  <input id="last_name" type='text' name='last_name' value="" placeholder="last name">
+  <label for="email"> Email: </label>
+  <input id="email" type='text' name='email' value="" placeholder="email">
+  <label for="note"> Note: </label>
+  <input id="note" type='text' name='note' value="" placeholder="note">
+  <label for="submit"> Click To: </label>
+  <input id="submit" type='submit' value='Submit'>
+<!-- <textarea name="name" rows="8" cols="80" placeholder=""></textarea> -->
 </form>

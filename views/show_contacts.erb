@@ -1,6 +1,18 @@
-<h1>THIS PAGE WILL DISPLAY THE CONTACT</h1>
+<h1> CONTACT</h1>
 <p>Id: <%= @contacts.id %></p>
 <p><strong>First Name: </strng><%= @contacts.first_name %></p>
 <p><strong>Last Name:  </strng><%= @contacts.last_name %></p>
 <p><strong>Email:      </strng><%= @contacts.email %></p>
 <p><strong>Note:       </strng><%= @contacts.note%> </p>
+
+<form action="/contacts/<%=@contacts.id %>/edit" class="w3-bar-item w3-button w3-hide-small">Edit Contact</a>
+  <input type='hidden' name='_method' value='put'>
+  <label for="edit"> </label>
+  <input id="edit" type='submit' value='Edit Contact'>
+</form>
+
+<form action='/contacts/<%= @contacts.id %>' method='post'>
+  <input type='hidden' name='_method' value='delete'>
+  <label for="delete"> Click To: </label>
+  <input id="delete" type='submit' value='Delete Contact'>
+</form>
