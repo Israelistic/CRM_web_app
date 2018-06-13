@@ -3,11 +3,14 @@ require 'sinatra'
 
 get "/" do
     erb :index
-
 end
+
 get "/contacts" do
   @contacts = Contact.all
   erb :contacts
+end
+get "/contacts/new" do
+  erb :new
 end
 
 get "/about" do
@@ -23,7 +26,6 @@ get "/show_contact/:id" do
     erb :show_contacts
     else
     raise Sinatra::NotFound
-
     end
 end
 after do
